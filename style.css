@@ -1,0 +1,140 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: segoe ui;
+	font-size: 16px;
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	width: 100%;
+	height: 10%;
+	background-color: #b2aaff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header span, .header div{
+	height: 50px;
+	width: 400px;
+	display: flex;
+	margin: auto 45px;
+	line-height: 50px;
+}
+
+.header img {
+	height: 90%;
+	width: auto;
+    margin: auto 25px;
+}
+
+
+div.container{
+	width: 100%;
+	height: 80%;
+	position: relative;
+}
+
+div.container .sidebar div{
+	display: none;
+}
+div.container .content div{
+	display: none;
+}
+div.container input{
+	display: none;
+}
+div.container input:checked + div {
+	display: inline-block;
+	width: 50%;
+}
+div.container input:checked + div +div{
+	display: inline-block;
+	width: 49%;
+}
+
+div.container .aside label{
+	width: 100%;
+	display: flex;
+	overflow: hidden; 
+	padding: 22px 16px;
+	border: none;
+	outline: none;
+	text-align: left;
+	cursor: pointer;
+  	border-top: 0.5px solid #ccc;
+}
+
+
+
+.aside{
+	position: fixed;
+	display: block;
+	float: left;
+	width: 4%;
+	height: 80%;
+/*	margin-left: 3%;
+	margin-right: 2%;*/
+	transition: width 0.8s ease-out 0s;
+
+
+}
+.container .aside:hover{
+	width: 375px;
+}
+
+
+.content{
+	display: inline-block;
+  padding: 0px 12px;
+  margin-left: 4%;
+  width: 96%;
+  border-left: 1px solid #ccc;
+  height: 680px;
+  background-color: #ccc;
+ 
+}
+
+div.container .content #input {
+	border: 1px solid #fff;
+
+	height: 96%;
+	margin: 1% 0;
+	background-color: #a9d8c4;
+}
+
+div.container .content #dataview {
+	margin: 1% 0;
+    background-color: #a9d8c4;
+    height: 96%;
+    border: 1px solid white;
+}
+
+div.container>.aside > label:hover{
+	background-color: #fff;
+}
+
+div.container .aside h4{
+	display: none;
+	position: fixed;
+	line-height: 35px;
+	margin-left: 70px;
+	transition: 0.4s;
+	text-transform: uppercase;
+}
+
+.container .aside > label:hover > h4{
+	display: inline-block;
+}
+
+
+footer {
+	height: 10%;
+	width: 100%;
+	padding: 8px 43px;
+}
