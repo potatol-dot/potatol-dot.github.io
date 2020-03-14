@@ -68,26 +68,12 @@ li{
 	height: auto;
 	margin-left: 8%;
 	margin-top: 2%;
-	display: flex;
 }
-.container-fluid .content .HD li{
-	display: flex;
-	padding: 10px;
-}
-.container-fluid .content .HD li p{
-	margin: 0 !important;
-	line-height: 50px;
-	padding-left: 10px;
-}
-.container-fluid .content .Hoi li a{
-	text-decoration: underline !important;
-	font-weight: bold;
-	color: #007bff!important;
+.content form{
+	width: 50%;
+	justify-content: space-between;
 }
 
-.container-fluid .content .Hoi li{
-	padding: 22px 0;
-}
 footer{
 	border-top: 1px solid #000;
 	padding-left: 8%;

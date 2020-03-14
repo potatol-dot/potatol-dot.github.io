@@ -4,58 +4,104 @@
 	<title>Quản lý nhân sự</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
-	<header class="header">
-		<span id="header-left">
-			<img src="logo-image.png">
-			<h2>QUẢN LÝ NHÂN SỰ</h2>	
-		</span>
-		<div id="header-right">
-			<img src="icon-notificate.png">
-			<img src="avatar-icon.png">
-			<h4>Hi, Admin</h4>
-		</div>
-	</header>
-
-	<div class="container" >
-		<div class="aside">
-			<label for="them"><img src="icon-add.png" height="30px"><h4>Thêm mới nhân sự</h4></label>
-			<label for="sua"><img src="icon-edit.png" height="30px"><h4>Chỉnh sửa nhân sự</h4></label>
-			<label for="xoa"><img src="icon-delete.png" height="30px"><h4>Xóa bỏ</h4></label>
-			<label for="xem"><img src="icon-search.png" height="30px"><h4>Tìm kiếm</h4></label>
-			<label for="LH"><img src="icon-HDSD.png" height="30px"><h4>Liên hệ chúng tôi</h4></label>
-			<label for="HD"><img src="icon-add.png" height="30px"><h4>Hướng dẫn sử dụng</h4></label>
-		</div>
-		<div class="content" >
-			<input id="them" type="radio" checked="them" name="swith">
-			<div id="input">chưa có gì cả</div>
-			<div id="dataview">bảng dữ liệu sẽ ở đây nè</div>
-
-			<input id="sua" type="radio" name="swith">
-			<div id="input">ở đây cũng vậy</div>
-			<div id="dataview">đây cx có bảng dữ liệu</div>
-
-			<input id="xoa" type="radio" name="swith">
-			<div id="input">thêm gì đó đi</div>
-			<div id="dataview">bảng dữ liệu sau khi xóa</div>
-
-			<input id="xem" type="radio" name="swith">
-			<div >xem cai l</div>
-
-			<input id="LH" type="radio" name="swith">
-			<div >gọi cho chính nhé</div>
-
-			<input id="HD" type="radio" name="swith">
-			<div >gbảo chính dậy cho</div>
+	<div class="header">
+		<div class="row">
+			<div class="col-1 offset-1"><img src="logo-image.png" height="50px" style="margin-top: 10px"></div>
+			<div class="col-3"><h2>Quản lý nhân sự</h2></div>
+			<div class="col-1 offset-3"><img src="admin.png" height="50px"></div>
+			<div class="col-1">hi admin</div>
+			<div class="col-1">
+				<ul>
+					<li><a href="#">Đăng xuất</a></li>
+					<li><a href="#">Sửa đổi tài khoản</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
-
+	<div class="container-fluid">
+		<div class="sidebar">
+				<ul>
+					<li id="l1">
+						<img src="icon-add.png" height="50px">
+						<a href="insert.html">Thêm mới</a>
+					</li>
+					<li id="l2">
+						<img src="icon-delete.png" height="50px">
+						<a href="#">Xóa</a>
+					</li>
+					<li id="l3">
+						<img src="icon-edit.png" height="50px">
+						<a href="#">Sửa đổi</a>
+					</li>
+					<li id="l4">
+						<img src="icon-search.png" height="50px">
+						<a href="#">Tìm kiếm</a>
+					</li>
+					<li id="l5">
+						<img src="icon-HDSD.png" height="50px">
+						<label> </label>
+						<a href="index.html">Hướng dẫn sử dụng</a>
+					</li>
+					<li id="l6">
+						<img src="icon-contact.png" height="50px">
+						<a href="#">Liên hệ</a>
+					</li>
+				</ul>
+		</div>
+		<div class="content">
+			<div class="HD">
+				<h1 style="margin-bottom: 40px">Hướng dẫn sử dụng Phần mềm Quản lý nhân sự</h1>
+				<h3>I. Giới thiệu chung về các phần chính của hệ thống</h3>
+				<ul style="margin-top: 30px;margin-left: 50px;border-right: 1px solid #ccc;">
+					<li>
+						<img src="icon-add.png" height="50px">
+						<p>giúp bạn chuyển tới chức năng thêm mới nhân sự.</p>
+					</li>
+					<li>
+						<img src="icon-delete.png" height="50px">
+						<p>giúp bạn chuyển chuyển tới chức năng xóa bỏ nhân sự.</p>
+					</li>
+					<li>
+						<img src="icon-edit.png" height="50px">
+						<p>giúp bạn chuyển tới chức năng thay đổi thông tin nhân sự.</p>
+					</li>
+					<li>
+						<img src="icon-search.png" height="50px">
+						<p>giúp bạn chuyển tới chức năng tìm kiếm</p>
+					</li>
+					<li>
+						<img src="icon-HDSD.png" height="50px">
+						<p>giúp bạn hiểu thêm về các chức năng của chương trình quản lý.</p>
+					</li>
+					<li>
+						<img src="icon-contact.png" height="50px">
+						<p>giúp bạn liên hệ với chúng tôi.</p>
+					</li>
+					</ul>
+			</div>
+			<div class="Hoi" style="flex-grow: 1">
+				<h1 style="text-align: center;">Câu hỏi thường gặp?</h1>
+				<ul style="margin-top: 12%; margin-left: 10%;">
+					<li><a href="#">Dữ liệu sau khi nhập sẽ được chuyển tới đâu</a></li>
+					<li><a href="#">Tôi muốn hỗ trợ có thể liên hệ ai?</a></li>
+					<li><a href="#">Tôi là ai?</a></li>
+					<li><a href="#">Đây là đâu?</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
 	<footer>
 		<h3>KHOA CÔNG NGHỆ THÔNG TIN - HỌC PHẦN THỰC TẬP NHÓM - NHÓM 7</h3>
 		<h4>Học Viện Kỹ thuật Quân Sự-236 Hoàng Quốc Việt-Bắc Từ Liêm-Hà Nội</h4>
 		<h5>@2020</h5>
 	</footer>
-
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>

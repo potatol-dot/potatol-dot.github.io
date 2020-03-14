@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Thêm mới nhân sự</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="insert.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="header">
+		<div class="row">
+			<div class="col-1 offset-1"><img src="logo-image.png" height="50px" style="margin-top: 10px"></div>
+			<div class="col-3"><h2>Quản lý nhân sự</h2></div>
+			<div class="col-1 offset-3"><img src="admin.png" height="50px"></div>
+			<div class="col-1">hi admin</div>
+			<div class="col-1">
+				<ul>
+					<li><a href="#">Đăng xuất</a></li>
+					<li><a href="#">Sửa đổi tài khoản</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="sidebar">
+				<ul>
+					<li id="l1">
+						<img src="icon-add.png" height="50px">
+						<label> </label>
+						<a href="#">Thêm mới</a>
+					</li>
+					<li id="l2">
+						<img src="icon-delete.png" height="50px">
+						<a href="#">Xóa</a>
+					</li>
+					<li id="l3">
+						<img src="icon-edit.png" height="50px">
+						<a href="#">Sửa đổi</a>
+					</li>
+					<li id="l4">
+						<img src="icon-search.png" height="50px">
+						<a href="#">Tìm kiếm</a>
+					</li>
+					<li id="l5">
+						<img src="icon-HDSD.png" height="50px">
+						<a href="index.html">Hướng dẫn sử dụng</a>
+					</li>
+					<li id="l6">
+						<img src="icon-contact.png" height="50px">
+						<a href="#">Liên hệ</a>
+					</li>
+				</ul>
+		</div>
+		<div class="content">
+			
+<form class="container" style="width: 50%; background-color:#f2f7ea; border: 0.5px solid #d8d5d5;position: relative;">
+	<div style="width: 45%;display: inline-block;">
+		<!-- Ô nhập họ tên-->
+  		<div class="form-group">
+    		<label for="name">Tên nhân sự</label>
+   		 	<input type="text" class="form-control" id="name-staff" placeholder="VD: Nguyễn Văn A">
+  		</div>
+			<!-- Ô nhập cmtnd-->
+  		<div class="form-group">
+		    <label for="idnumber-staff">Số chứng minh thư nhân dân</label>
+		    <input type="text" class="form-control" id="idnumber-staff" placeholder="VD: 164642483">
+  		</div>
+		<!-- Ô nhập ngày sinh-->
+		<div class="form-group">
+	 	   <label for="birthday-staff">Ngày sinh</label>
+		    <input type="date" class="form-control" id="birthday-staff">
+  		</div>
+		<!-- Ô nhập quê quán-->
+  		<div class="form-group">
+		    <label for="address-staff">Quê quán/ Địa chỉ</label>
+		    <input type="text" class="form-control" id="address-staff" placeholder="VD: Số nhà- Đường- Quận- Tỉnh">
+  		</div>
+		<!-- Nhập giới tính-->
+		<div class="form-group">
+	 	   <label for="Sex-staff">Giới tính</label>
+	 	   <select class="form-control" id="sex-staff">
+	   	  	  <option>Nam</option>
+	    	  <option>Nữ</option>
+	     	  <option>Khác</option>
+	   		</select>
+  		</div>
+  		<!-- Nhập dân tộc -->
+		<div class="form-group">
+		    <label for="nation-staff">Dân tộc</label>
+		    <input type="text" class="form-control" id="nation-staff" placeholder="VD: Kinh, Thái,....">
+  		</div>
+  		<!-- Nhập SĐT -->
+  		<div class="form-group">
+	 	   <label for="phonenumber-staff">Số điện thoại</label>
+	  	  <input type="text" class="form-control" id="phonenumber-staff" placeholder="VD: 0912098298">
+  		</div>
+  </div>
+  <div style="display: inline-block;position: absolute;">
+		<!--Chọn phòng ban làm việc -->
+  		<div class="form-group">
+		    <label for="workroom-staff">Phòng ban</label>
+		    <select class="form-control" id="workroom-staff">
+		      <option>Phòng tổ chức - hành chính</option>
+		      <option>Phòng tài chính - kế toán</option>
+		      <option>Phòng kế hoạch - kinh doanh - đầu tư</option>
+		      <option>Phòng công nghệ thông tin</option>
+		      <option>Khác</option>
+		    </select>
+  		</div>
+		<!--Chọn chức vụ -->
+  		<div class="form-group">
+		    <label for="position-staff">Chức vụ</label>
+	 	    <select class="form-control" id="position-staff">
+	   	   		<option>Giám đốc</option>
+	     		<option>Phó giám đốc</option>
+	     		<option>Trưởng phòng</option>
+	      		<option>Nhân viên</option>
+	    		<option>Khác</option>
+	   		</select>
+  		</div>
+  		<!--Chọn bậc lương-->
+  		<div class="form-group">
+	   	 	<label for="wage-staff">Bậc lương</label>
+	   		 <select class="form-control" id="wage-staff">
+	    		  <option>GDI</option>
+	     		 <option>GDII</option>
+	     		 <option>GDIII</option>
+	     		 <option>PGDI</option>
+	      		 <option>PGDII</option>
+	      		 <option>PGDIII</option>
+	    		 <option>TPI</option>
+	     		 <option>TPII</option>
+	     		 <option>TPIII</option>
+	     		 <option>NVI</option>
+	     		 <option>NVII</option>
+	     		 <option>NVIII</option>
+	    	 </select>
+  		</div>
+  	<!--Chọn trình độ học vấn -->
+  		<div class="form-group">
+	  		  <label for="academiclevel-staff">Trình độ học vấn</label>
+	   			<select class="form-control" id="academiclevel-staff">
+	      			<option>Học vấn phổ thông</option>
+	     			<option>Trung cấp chuyên nghiệp</option>
+	      			<option>Cao đẳng</option>
+	      			<option>Đại học</option>
+	      			<option>Sau đại học</option>
+	    		</select>
+  		</div>
+  		<div class="form-group">
+	    		<label for="specialized-staff">Chuyên ngành</label>
+	    		<select class="form-control" id="specialized-staff">
+	      		<option>Công nghệ thông tin</option>
+	      		<option>Kế toán</option>
+	      		<option>Khác</option>
+	      		<option>Khác</option>
+	      		<option>Khác</option>
+	    	</select>
+  		</div>
+		<!-- Hợp đồng lao động -->
+  			<div class="form-row">
+   			<div class="form-group col-md-6">
+      		<label for="start-day">Ngày bắt đầu</label>
+     		<input type="date" class="form-control" id="start-day">
+    		</div>
+    		<div class="form-group col-md-6">
+      		<label for="inputPassword4">Ngày kết thúc</label>
+      		<input type="date" class="form-control" id="end-day">
+    		</div>
+  		</div>
+  	</div>
+  	<button type="submit" style="margin-left: 20%;width: 145px;height: 35px;">Thêm</button>
+</form>
+
+		</div>
+	</div>
+	
+	<footer>
+		<h3>KHOA CÔNG NGHỆ THÔNG TIN - HỌC PHẦN THỰC TẬP NHÓM - NHÓM 7</h3>
+		<h4>Học Viện Kỹ thuật Quân Sự-236 Hoàng Quốc Việt-Bắc Từ Liêm-Hà Nội</h4>
+		<h5>@2020</h5>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
